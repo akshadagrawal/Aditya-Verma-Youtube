@@ -7,7 +7,11 @@ int binary(vector<int> arr, int n, int c){
     int left= 0, right= n-1;
     while(left <= right) {
         int mid= left +  (right - left) /2;
+        
+        //contion to chehck if number matched
         if( arr[mid] == c) return mid+1;
+
+        //condition to go left or right
         if(arr[mid] < c) left= mid+1;
         else right= mid-1;
     }
