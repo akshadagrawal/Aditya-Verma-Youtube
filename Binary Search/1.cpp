@@ -1,5 +1,4 @@
-//Binary search
-//Sorted array given, think for binary search
+//Binary search on a reverse sorted array
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -8,8 +7,8 @@ int binary(vector<int> arr, int n, int c){
     while(left <= right) {
         int mid= left +  (right - left) /2;
         if( arr[mid] == c) return mid+1;
-        if(arr[mid] < c) left= mid+1;
-        else right= mid-1;
+        if(arr[mid] < c) right= mid-1;
+        else left= mid+1;
     }
     return 0;
 }
