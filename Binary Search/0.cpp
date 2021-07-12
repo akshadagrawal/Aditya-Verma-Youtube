@@ -1,5 +1,5 @@
 //Binary search
-//Sorted array given, think for binary search
+//Sorted array given; always think for binary search
 //condition to check if numbrers matched, condition to go left or right
 // jo aata hau uska code likh lo fir modify karo
 #include<bits/stdc++.h>
