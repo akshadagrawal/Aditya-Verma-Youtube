@@ -1,4 +1,5 @@
 //First and last occurence 
+//count of element in  rotataed sorted array
 
 #include<bits/stdc++.h>
 using namespace std;

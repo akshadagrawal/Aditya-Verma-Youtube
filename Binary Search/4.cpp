@@ -1,4 +1,4 @@
-//how many times is sorted array rotated
+//search in a sorted, rotated array
 // 2 4 6 8 11 12 15 18 => 11 12 15 18 2 4 6 8
 
 #include<bits/stdc++.h>                        
@@ -35,7 +35,7 @@ int main() {
    int n;
    cin>>n;
    int arr[n];
-   for(int i=0; i< n;i ++) cin>>arr[i];
+   for(int i=0; i < n;i ++) cin>>arr[i];
    int x; cin>>x;
    int minindex = sorted(arr, n);
    if(binary(arr,0, minindex-1,x)) cout<<binary(arr,0,minindex-1,x);
